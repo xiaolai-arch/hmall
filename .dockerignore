@@ -1,0 +1,23 @@
+# Maven 本地仓库缓存
+.mvn/
+# IDE
+.idea/
+*.iml
+# Git
+.git/
+.gitignore
+# Docker 相关
+docker-compose.yml
+Dockerfile
+# 构建输出
+target/
+*/target/
+# 镜像 tar 包
+images/
+# 日志
+logs/
+# 前端（不需要打进 jar 里）
+nginx/
+# 其他
+.ci/
+*.md

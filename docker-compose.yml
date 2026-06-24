@@ -1,0 +1,100 @@
+services:
+  # ========== MySQL 数据库 ==========
+  mysql:
+    image: mysql:latest
+    container_name: hmall-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "123"
+      TZ: Asia/Shanghai
+    ports:
+      - "3307:3306"
+    volumes:
+      # 挂载自定义 MySQL 配置
+      - ./mysql/conf/hm.cnf:/etc/mysql/conf.d/hm.cnf
+      # 挂载初始化 SQL（首次启动自动执行）
+      - ./mysql/init/hmall.sql:/docker-entrypoint-initdb.d/01-hmall.sql
+      # 数据持久化
+      - hmall-mysql-data:/var/lib/mysql
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p123"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # ========== Redis 缓存 ==========
+  redis:
+    image: redis:7-alpine
+    container_name: hmall-redis
+    restart: always
+    command: redis-server --appendonly yes
+    ports:
+      - "6380:6379"
+    volumes:
+      - hmall-redis-data:/data
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ========== Spring Boot 后端服务 ==========
+  hmall:
+    build:
+      context: .
+      dockerfile: ./hm-service/Dockerfile
+      pull: false
+    image: hmall-service:latest
+    pull_policy: build
+    container_name: hmall-service
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+    environment:
+      # 数据库连接（对应 application.yaml 中的 ${hm.db.host} 和 ${hm.db.pw}）
+      HM_DB_HOST: mysql
+      HM_DB_PW: "123"
+      # Redis 连接
+      SPRING_REDIS_HOST: redis
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== Nginx 前端代理 ==========
+  nginx:
+    image: nginx:latest
+    container_name: hmall-nginx
+    restart: always
+    depends_on:
+      - hmall
+    ports:
+      # 用户端 (portal)
+      - "18080:18080"
+      # 管理端 (admin)
+      - "18081:18081"
+    volumes:
+      # 挂载 Nginx 配置
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      # 挂载前端静态文件
+      - ./nginx/html:/usr/share/nginx/html
+    networks:
+      - hmall-net
+
+# ========== 数据卷 ==========
+volumes:
+  hmall-mysql-data:
+  hmall-redis-data:
+
+# ========== 网络 ==========
+networks:
+  hmall-net:
+    driver: bridge

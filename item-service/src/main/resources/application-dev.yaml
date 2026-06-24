@@ -1,0 +1,9 @@
+hm:
+  db:
+    host: localhost
+    port: 3307
+    pw: 123
+spring:
+  redis:
+    host: localhost
+    port: 6379

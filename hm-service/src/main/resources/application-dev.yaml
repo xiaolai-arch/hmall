@@ -1,0 +1,8 @@
+hm:
+  db:
+    host: mysql
+    pw: 123
+spring:
+  redis:
+    host: redis
+    port: 6379
