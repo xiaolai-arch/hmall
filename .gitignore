@@ -3,3 +3,6 @@
 /hm-common/target/
 /hm-service/target/
 /item-service/target/
+
+# Docker 镜像
+images/
