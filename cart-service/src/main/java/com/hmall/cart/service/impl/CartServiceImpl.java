@@ -4,6 +4,7 @@ import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.cart.client.ItemClient;
 import com.hmall.cart.domain.dto.ItemDTO;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
@@ -48,6 +49,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     private final RestTemplate restTemplate;
 
     private final DiscoveryClient discoveryClient;
+
+    private final ItemClient itemClient;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -99,7 +102,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
         // 2.查询商品
         // List<ItemDTO> items = itemService.queryItemByIds(itemIds);
-        List<ItemDTO> items = null;
+        /*List<ItemDTO> items = null;
 
         // 获取注册中心中，商品微服务
         List<ServiceInstance> instanceList = discoveryClient.getInstances("item-service");
@@ -118,7 +121,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
         if (response.getStatusCode().is2xxSuccessful()){
             items = response.getBody();
-        }
+        }*/
+        List<ItemDTO> items = itemClient.queryItemByIds(itemIds);
 
         if (CollUtils.isEmpty(items)) {
             return;
