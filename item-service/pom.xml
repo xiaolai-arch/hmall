@@ -45,6 +45,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!--Nacos依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>

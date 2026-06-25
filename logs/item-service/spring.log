@@ -1,22 +1,124 @@
-19:48:24:469  INFO 99596 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.31 on MacBook-Pro.local with PID 99596 (/Users/Admin/IdeaProjects/hmall/item-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
-19:48:24:471 DEBUG 99596 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
-19:48:24:471  INFO 99596 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
-19:48:25:028  INFO 99596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-19:48:25:032  INFO 99596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-19:48:25:032  INFO 99596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-19:48:25:083  INFO 99596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-19:48:25:083  INFO 99596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
-19:48:25:474  INFO 99596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-19:48:25:522  INFO 99596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-19:48:25:523  INFO 99596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-19:48:25:524  INFO 99596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-19:48:25:535  INFO 99596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-19:48:25:602  INFO 99596 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 1.334 seconds (JVM running for 1.693)
-19:57:31:343  INFO 99596 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-19:57:31:344  INFO 99596 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-19:57:31:351  INFO 99596 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-21:03:02:737  INFO 99596 --- [http-nio-8082-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-21:03:02:913  INFO 99596 --- [http-nio-8082-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-21:03:02:917 DEBUG 99596 --- [http-nio-8082-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
-21:03:02:928 DEBUG 99596 --- [http-nio-8082-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
-21:03:02:944 DEBUG 99596 --- [http-nio-8082-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:09:25:641  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m7s357ms).
+03:37:56:665  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s865ms), soft-evicting connections from pool.
+05:40:02:097  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s992ms).
+05:52:46:064  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m43s967ms).
+07:20:36:085  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m18s990ms).
+08:39:36:527  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s575ms).
+11:20:29:926  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s653ms).
+11:22:25:641  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s690ms).
+11:24:19:912  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s265ms).
+11:25:37:261  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s349ms).
+11:28:07:958  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m690ms).
+11:29:29:811  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s853ms).
+11:31:17:546  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s730ms).
+11:32:38:273  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s727ms).
+11:34:16:246  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s968ms).
+11:35:38:555  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s309ms).
+11:37:33:963  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s408ms).
+11:39:27:797  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s832ms).
+13:40:12:133  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s203ms).
+13:42:04:115  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s973ms).
+13:43:14:997  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s883ms).
+13:45:03:529  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s530ms).
+13:47:04:965  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m1s436ms).
+16:31:11:617  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s416ms).
+16:33:04:278  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s655ms).
+16:34:27:223  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s944ms).
+16:36:18:338  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s114ms).
+16:37:27:114  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s776ms).
+16:39:12:793  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s671ms).
+16:40:21:952  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s159ms).
+16:42:17:572  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s614ms).
+16:43:39:982  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s410ms).
+16:45:20:356  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s366ms).
+16:47:16:069  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s694ms).
+16:48:30:245  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s176ms).
+16:50:12:791  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s539ms).
+16:51:35:723  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s932ms).
+16:53:30:011  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s281ms).
+16:54:53:352  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s341ms).
+16:56:46:102  WARN 99596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s743ms).
+18:08:43:044  INFO 99596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:08:43:061  INFO 99596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:08:46:880  INFO 48782 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.31 on MacBook-Pro.local with PID 48782 (/Users/Admin/IdeaProjects/hmall/item-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+18:08:46:882 DEBUG 48782 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:08:46:882  INFO 48782 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
+18:08:47:388  INFO 48782 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c414497b-08ec-3e5c-a252-0da90406e5b8
+18:08:47:561  INFO 48782 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:08:47:566  INFO 48782 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:08:47:566  INFO 48782 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:08:47:628  INFO 48782 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:08:47:628  INFO 48782 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+18:08:48:055  INFO 48782 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:08:48:168  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of c5b824b0-0a5f-45a0-bfc0-76301935aaa9
+18:08:48:190  INFO 48782 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 3 keys and 6 values 
+18:08:48:203  INFO 48782 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+18:08:48:209  INFO 48782 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+18:08:48:210  WARN 48782 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:08:48:215  INFO 48782 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+18:08:48:221  INFO 48782 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+18:08:48:227  INFO 48782 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+18:08:48:228  WARN 48782 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:08:48:228  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] RpcClient init label, labels = {module=naming, source=sdk}
+18:08:48:229  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:08:48:229  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:08:48:230  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:08:48:230  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+18:08:48:743  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Success to connect to server [localhost:8848] on start up, connectionId = 1782382128537_192.168.65.1_41591
+18:08:48:743  INFO 48782 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Notify connected event to listeners.
+18:08:48:744  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:08:48:745  INFO 48782 --- [main] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$900/0x0000000800683040
+18:08:48:934  INFO 48782 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:08:48:985  INFO 48782 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 172.30.193.44:8082 register finished
+18:08:48:990  INFO 48782 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:08:48:992  INFO 48782 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:08:49:007  INFO 48782 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:08:49:095  INFO 48782 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 2.638 seconds (JVM running for 3.012)
+18:08:49:489  INFO 48782 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = NotifySubscriberRequest, requestId = 1
+18:08:49:492  INFO 48782 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = NotifySubscriberRequest, requestId = 1
+18:10:56:599  INFO 48930 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.31 on MacBook-Pro.local with PID 48930 (/Users/Admin/IdeaProjects/hmall/item-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+18:10:56:600 DEBUG 48930 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:10:56:600  INFO 48930 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
+18:10:57:008  INFO 48930 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c414497b-08ec-3e5c-a252-0da90406e5b8
+18:10:57:174  INFO 48930 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+18:10:57:179  INFO 48930 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:10:57:179  INFO 48930 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:10:57:229  INFO 48930 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:10:57:230  INFO 48930 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 611 ms
+18:10:57:615  INFO 48930 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:10:57:710  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of bcc7f9e0-785e-4612-b2ab-7dbb4e516efe
+18:10:57:742  INFO 48930 --- [main] org.reflections.Reflections              : Reflections took 21 ms to scan 1 urls, producing 3 keys and 6 values 
+18:10:57:755  INFO 48930 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
+18:10:57:761  INFO 48930 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+18:10:57:762  WARN 48930 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:10:57:767  INFO 48930 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+18:10:57:773  INFO 48930 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+18:10:57:779  INFO 48930 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+18:10:57:780  WARN 48930 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:10:57:780  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] RpcClient init label, labels = {module=naming, source=sdk}
+18:10:57:781  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:10:57:781  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:10:57:782  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:10:57:782  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+18:10:58:163  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Success to connect to server [localhost:8848] on start up, connectionId = 1782382258007_192.168.65.1_30589
+18:10:58:164  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Notify connected event to listeners.
+18:10:58:165  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:10:58:166  INFO 48930 --- [main] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$900/0x0000000800683840
+18:10:58:242  INFO 48930 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+18:10:58:284  INFO 48930 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 172.30.193.44:8181 register finished
+18:10:58:287  INFO 48930 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:10:58:289  INFO 48930 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:10:58:302  INFO 48930 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:10:58:383  INFO 48930 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 2.025 seconds (JVM running for 2.369)
+18:10:58:818  INFO 48782 --- [nacos-grpc-client-executor-60] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = NotifySubscriberRequest, requestId = 2
+18:10:58:822  INFO 48782 --- [nacos-grpc-client-executor-60] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = NotifySubscriberRequest, requestId = 2
+18:10:58:825  INFO 48930 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = NotifySubscriberRequest, requestId = 3
+18:10:58:827  INFO 48930 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = NotifySubscriberRequest, requestId = 3
+18:21:44:796  INFO 48930 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:21:44:796  INFO 48930 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:21:44:800  INFO 48930 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+18:21:44:849  INFO 48930 --- [http-nio-8181-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:21:44:995  INFO 48930 --- [http-nio-8181-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:21:44:998 DEBUG 48930 --- [http-nio-8181-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+18:21:45:009 DEBUG 48930 --- [http-nio-8181-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+18:21:45:028 DEBUG 48930 --- [http-nio-8181-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
