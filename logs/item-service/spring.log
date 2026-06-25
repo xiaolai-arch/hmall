@@ -133,3 +133,20 @@
 20:06:23:186 DEBUG 48782 --- [http-nio-8082-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
 20:06:23:197 DEBUG 48782 --- [http-nio-8082-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
 20:06:23:208 DEBUG 48782 --- [http-nio-8082-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+21:44:46:918  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s832ms), soft-evicting connections from pool.
+21:44:54:032  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s834ms), soft-evicting connections from pool.
+22:07:51:124 DEBUG 48930 --- [http-nio-8181-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:07:51:127 DEBUG 48930 --- [http-nio-8181-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+22:07:51:135 DEBUG 48930 --- [http-nio-8181-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+22:07:56:831 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:07:56:833 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+22:07:56:839 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+22:23:43:702 DEBUG 48930 --- [http-nio-8181-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:23:43:704 DEBUG 48930 --- [http-nio-8181-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+22:23:43:709 DEBUG 48930 --- [http-nio-8181-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+22:23:44:257 DEBUG 48782 --- [http-nio-8082-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:23:44:258 DEBUG 48782 --- [http-nio-8082-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+22:23:44:264 DEBUG 48782 --- [http-nio-8082-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+22:23:45:397 DEBUG 48930 --- [http-nio-8181-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+22:23:45:397 DEBUG 48930 --- [http-nio-8181-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+22:23:45:398 DEBUG 48930 --- [http-nio-8181-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
