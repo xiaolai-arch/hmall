@@ -24,9 +24,13 @@ spring:
         # ========== 商品服务 ==========
         - id: item-service
           uri: lb://item-service
+#          predicates:
+#            - Path=/api/items/**,/api/search/**   # /items/** 和 /search/** 都转发到商品服务
+#            - Method=GET,POST
+#          filters:
+#            - StripPrefix=1  # 去掉前缀，即 /api/items/1 转发到 /items/1
           predicates:
-            - Path=/items/**,/search/**   # /items/** 和 /search/** 都转发到商品服务
-
+            - Path=/items/**,/search/**
         # ========== 用户服务 ==========
         - id: user-service
           uri: lb://user-service
