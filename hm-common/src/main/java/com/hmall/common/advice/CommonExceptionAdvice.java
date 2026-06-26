@@ -4,6 +4,7 @@ import com.hmall.common.domain.R;
 import com.hmall.common.exception.BadRequestException;
 import com.hmall.common.exception.CommonException;
 import com.hmall.common.exception.DbException;
+import com.hmall.common.exception.UnauthorizedException;
 import com.hmall.common.utils.WebUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -51,9 +52,19 @@ public class CommonExceptionAdvice {
 
     @ExceptionHandler(NestedServletException.class)
     public Object handleNestedServletException(NestedServletException e) {
+        // 如果原始异常是 CommonException，直接交给对应 handler 处理
+        if (e.getCause() instanceof CommonException) {
+            return processResponse((CommonException) e.getCause());
+        }
         log.error("参数异常 -> NestedServletException，{}", e.getMessage());
         log.debug("", e);
         return processResponse(new BadRequestException("请求参数处理异常"));
+    }
+
+    @ExceptionHandler(UnauthorizedException.class)
+    public Object handleUnauthorizedException(UnauthorizedException e) {
+        log.error("未登录异常 -> {}", e.getMessage());
+        return processResponse(e);
     }
 
     @ExceptionHandler(Exception.class)

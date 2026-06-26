@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import springfox.documentation.spring.web.plugins.DefaultConfiguration;
 
 import java.util.Collection;
-import java.util.List;
 
 @FeignClient(value = "cart-service", configuration = DefaultConfiguration.class)
 public interface CartClient {
