@@ -49,3 +49,109 @@
 12:43:05:903  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s71ms).
 12:43:08:706  INFO 68592 --- [nacos-grpc-client-executor-8129] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 89
 12:43:08:707  INFO 68592 --- [nacos-grpc-client-executor-8129] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 89
+13:51:41:863  INFO 20850 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 26.0.1 on MacBook-Pro.local with PID 20850 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+13:51:41:866 DEBUG 20850 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+13:51:41:866  INFO 20850 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+13:51:42:411  INFO 20850 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3523a153-1a1b-3a0c-892d-437263623bea
+13:51:42:641  INFO 20850 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+13:51:42:646  INFO 20850 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+13:51:42:646  INFO 20850 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+13:51:42:712  INFO 20850 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+13:51:42:712  INFO 20850 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
+13:51:42:745  WARN 20850 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.ItemClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+13:51:42:746  INFO 20850 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+13:51:42:755  INFO 20850 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:51:42:763 ERROR 20850 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.trade.service.impl.OrderServiceImpl required a bean of type 'com.hmall.api.client.ItemClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your configuration.
+
+13:52:01:820  INFO 20900 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.31 on MacBook-Pro.local with PID 20900 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+13:52:01:821 DEBUG 20900 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+13:52:01:821  INFO 20900 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+13:52:02:345  INFO 20900 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3523a153-1a1b-3a0c-892d-437263623bea
+13:52:02:519  INFO 20900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+13:52:02:522  INFO 20900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+13:52:02:522  INFO 20900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+13:52:02:586  INFO 20900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+13:52:02:586  INFO 20900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+13:52:02:618  WARN 20900 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.ItemClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+13:52:02:619  INFO 20900 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+13:52:02:629  INFO 20900 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:52:02:637 ERROR 20900 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.hmall.trade.service.impl.OrderServiceImpl required a bean of type 'com.hmall.api.client.ItemClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your configuration.
+
+13:53:30:707  INFO 21031 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.31 on MacBook-Pro.local with PID 21031 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+13:53:30:709 DEBUG 21031 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+13:53:30:709  INFO 21031 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+13:53:31:204  INFO 21031 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=84b733ad-96be-3a43-b3da-5c74bf23d21a
+13:53:31:401  INFO 21031 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+13:53:31:405  INFO 21031 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+13:53:31:405  INFO 21031 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+13:53:31:475  INFO 21031 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+13:53:31:475  INFO 21031 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+13:53:31:575  INFO 21031 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+13:53:31:967  INFO 21031 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+13:53:32:227  INFO 21031 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+13:53:32:342  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 93822584-4df8-46e6-b307-9e17f382128e
+13:53:32:362  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+13:53:32:374  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
+13:53:32:380  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+13:53:32:382  WARN 21031 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+13:53:32:386  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+13:53:32:392  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+13:53:32:397  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+13:53:32:398  WARN 21031 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+13:53:32:398  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] RpcClient init label, labels = {module=naming, source=sdk}
+13:53:32:399  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+13:53:32:399  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+13:53:32:400  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+13:53:32:401  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+13:53:32:861  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Success to connect to server [localhost:8848] on start up, connectionId = 1782453212717_192.168.65.1_26533
+13:53:32:861  INFO 21031 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Notify connected event to listeners.
+13:53:32:863  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+13:53:32:863  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$986/0x0000000800719840
+13:53:32:931  INFO 21031 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+13:53:32:941  INFO 21031 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 172.30.193.44:8085 register finished
+13:53:32:945  INFO 21031 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+13:53:32:947  INFO 21031 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+13:53:32:955  INFO 21031 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+13:53:32:996  INFO 21031 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 2.535 seconds (JVM running for 2.862)
+13:53:33:523  INFO 68592 --- [nacos-grpc-client-executor-9141] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = NotifySubscriberRequest, requestId = 94
+13:53:33:527  INFO 21031 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = NotifySubscriberRequest, requestId = 93
+13:53:33:528  INFO 68592 --- [nacos-grpc-client-executor-9141] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = NotifySubscriberRequest, requestId = 94
+13:53:33:528  INFO 21031 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = NotifySubscriberRequest, requestId = 93
+13:53:43:323  INFO 21031 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:53:43:324  INFO 21031 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+13:53:43:331  INFO 21031 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+13:54:19:710  INFO 21031 --- [http-nio-8085-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+13:54:19:868  INFO 21031 --- [http-nio-8085-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+13:54:19:872 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+13:54:19:884 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 123865420(Long)
+13:54:19:906 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1

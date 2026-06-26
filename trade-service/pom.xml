@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>item-service</artifactId>
+    <artifactId>trade-service</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -45,12 +45,31 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <!--Nacos依赖-->
+        <!--Nacos服务注册依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
+        <!--OpenFeign依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!--负载均衡-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+
+        <!--OK Http依赖-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
+        </dependency>
+
+        <!--feign客户端工程-->
         <dependency>
             <groupId>com.heima</groupId>
             <artifactId>hm-api</artifactId>
