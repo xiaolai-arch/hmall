@@ -243,3 +243,5 @@ Identify and stop the process that's listening on port 8085 or configure this ap
 15:03:36:155  INFO 28189 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 15:03:36:156  INFO 28189 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 15:03:36:158  INFO 28189 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+15:46:14:334  INFO 28189 --- [nacos-grpc-client-executor-411] com.alibaba.nacos.common.remote.client   : [6be3d1c2-4c9a-47fe-996c-06af58e349b0] Receive server push request, request = ClientDetectionRequest, requestId = 109
+15:46:14:336  INFO 28189 --- [nacos-grpc-client-executor-411] com.alibaba.nacos.common.remote.client   : [6be3d1c2-4c9a-47fe-996c-06af58e349b0] Ack server push request, request = ClientDetectionRequest, requestId = 109

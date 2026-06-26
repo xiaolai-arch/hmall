@@ -155,3 +155,9 @@ Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your confi
 13:54:19:872 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
 13:54:19:884 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 123865420(Long)
 13:54:19:906 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+15:46:10:833  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s747ms).
+15:46:14:291  INFO 68592 --- [nacos-grpc-client-executor-10416] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 111
+15:46:14:291  INFO 68592 --- [nacos-grpc-client-executor-10416] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 111
+15:46:14:339  INFO 21031 --- [nacos-grpc-client-executor-1569] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 108
+15:46:14:344  INFO 21031 --- [nacos-grpc-client-executor-1569] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 108
+15:46:24:635  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s748ms).

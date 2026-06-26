@@ -75,3 +75,21 @@
 12:43:08:705  INFO 48782 --- [nacos-grpc-client-executor-11496] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 87
 12:43:08:706  INFO 48782 --- [nacos-grpc-client-executor-11496] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 87
 12:43:09:383  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m35s580ms).
+15:46:14:291  INFO 48782 --- [nacos-grpc-client-executor-13817] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 107
+15:46:14:302  INFO 48782 --- [nacos-grpc-client-executor-13817] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 107
+15:46:14:292  INFO 48930 --- [nacos-grpc-client-executor-14053] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 110
+15:46:14:307  INFO 48930 --- [nacos-grpc-client-executor-14053] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 110
+15:46:14:334  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s748ms).
+15:46:21:314  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s750ms).
+16:23:16:395 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+16:23:16:397 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+16:23:16:445 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+16:23:16:451 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+16:23:16:452 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+16:23:16:469 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+16:23:32:543 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+16:23:32:544 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+16:23:32:559 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+16:23:32:560 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+16:23:32:560 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+16:23:32:563 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
