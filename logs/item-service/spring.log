@@ -1,180 +1,278 @@
-00:31:50:863  INFO 48930 --- [nacos-grpc-client-executor-5254] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 62
-00:31:50:872  INFO 48930 --- [nacos-grpc-client-executor-5254] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 62
-00:31:50:858  INFO 48782 --- [nacos-grpc-client-executor-5118] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 61
-00:31:50:873  INFO 48782 --- [nacos-grpc-client-executor-5118] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 61
-00:31:51:161  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s352ms).
-00:31:58:232  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s354ms).
-00:33:41:020  INFO 48782 --- [nacos-grpc-client-executor-5131] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 63
-00:33:41:020  INFO 48930 --- [nacos-grpc-client-executor-5269] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 64
-00:33:41:022  INFO 48782 --- [nacos-grpc-client-executor-5131] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 63
-00:33:41:022  INFO 48930 --- [nacos-grpc-client-executor-5269] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 64
-00:33:44:162  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s990ms).
-00:33:51:243  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s).
-00:35:06:702  INFO 48782 --- [nacos-grpc-client-executor-5137] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 66
-00:35:06:704  INFO 48782 --- [nacos-grpc-client-executor-5137] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 66
-00:35:06:706  INFO 48930 --- [nacos-grpc-client-executor-5276] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 67
-00:35:06:710  INFO 48930 --- [nacos-grpc-client-executor-5276] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 67
-00:35:09:778  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s617ms).
-00:35:16:854  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s611ms).
-00:36:56:800  INFO 48782 --- [nacos-grpc-client-executor-5151] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 69
-00:36:56:803  INFO 48782 --- [nacos-grpc-client-executor-5151] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 69
-00:36:56:803  INFO 48930 --- [nacos-grpc-client-executor-5289] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 70
-00:36:56:818  INFO 48930 --- [nacos-grpc-client-executor-5289] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 70
-00:36:59:721  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s937ms).
-00:37:06:800  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s936ms).
-00:38:22:149  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s432ms).
-00:38:29:222  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s423ms).
-00:38:49:401  INFO 48930 --- [nacos-grpc-client-executor-5302] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 73
-00:38:49:401  INFO 48782 --- [nacos-grpc-client-executor-5164] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 72
-00:38:49:401  INFO 48930 --- [nacos-grpc-client-executor-5302] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 73
-00:38:49:401  INFO 48782 --- [nacos-grpc-client-executor-5164] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 72
-00:40:09:009  INFO 48930 --- [nacos-grpc-client-executor-5310] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 75
-00:40:09:010  INFO 48930 --- [nacos-grpc-client-executor-5310] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 75
-00:40:11:703  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s543ms).
-00:40:18:760  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s536ms).
-00:41:42:149  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s388ms).
-00:42:05:107  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s393ms).
-00:43:13:194  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s86ms).
-00:43:20:246  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s89ms).
-00:44:53:994  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s789ms).
-00:45:01:046  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s787ms).
-00:46:05:391  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s397ms).
-00:46:12:445  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s400ms).
-00:47:45:006  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s605ms).
-00:47:52:057  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s602ms).
-00:49:04:281  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s276ms).
-00:49:11:326  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s270ms).
-00:50:45:758  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s467ms).
-00:50:52:804  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s472ms).
-00:52:11:041  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s238ms).
-00:52:34:005  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s235ms).
-00:53:55:094  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s89ms).
-00:54:02:142  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s96ms).
-03:24:57:471  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s847ms), soft-evicting connections from pool.
-03:25:04:417  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s846ms), soft-evicting connections from pool.
-08:31:43:048  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s178ms).
-08:50:40:430  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m38s531ms).
-09:08:09:093  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m26s45ms).
-09:25:22:653  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m42s223ms).
-09:44:29:822  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m20s729ms).
-10:04:06:702  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m44s50ms).
-10:20:12:370  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m42s548ms).
-10:47:42:729  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m36s27ms).
-11:04:55:588  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m43s218ms).
-11:14:21:425  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m38s695ms).
-11:14:28:386  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m32s798ms).
-11:37:37:386  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m59s641ms).
-12:35:33:067  INFO 48782 --- [nacos-grpc-client-executor-11489] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 84
-12:35:33:068  INFO 48782 --- [nacos-grpc-client-executor-11489] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 84
-12:35:33:071  INFO 48930 --- [nacos-grpc-client-executor-11797] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 85
-12:35:33:073  INFO 48930 --- [nacos-grpc-client-executor-11797] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 85
-12:35:33:804  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h14m33s11ms).
-12:42:46:368  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m8s983ms).
-12:43:08:703  INFO 48930 --- [nacos-grpc-client-executor-11803] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 88
-12:43:08:705  INFO 48930 --- [nacos-grpc-client-executor-11803] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 88
-12:43:08:705  INFO 48782 --- [nacos-grpc-client-executor-11496] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 87
-12:43:08:706  INFO 48782 --- [nacos-grpc-client-executor-11496] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 87
-12:43:09:383  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m35s580ms).
-15:46:14:291  INFO 48782 --- [nacos-grpc-client-executor-13817] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 107
-15:46:14:302  INFO 48782 --- [nacos-grpc-client-executor-13817] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 107
-15:46:14:292  INFO 48930 --- [nacos-grpc-client-executor-14053] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 110
-15:46:14:307  INFO 48930 --- [nacos-grpc-client-executor-14053] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 110
-15:46:14:334  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s748ms).
-15:46:21:314  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s750ms).
-16:23:16:395 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
-16:23:16:397 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
-16:23:16:445 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
-16:23:16:451 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
-16:23:16:452 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
-16:23:16:469 DEBUG 48782 --- [http-nio-8082-exec-7] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
-16:23:32:543 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
-16:23:32:544 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
-16:23:32:559 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
-16:23:32:560 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
-16:23:32:560 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
-16:23:32:563 DEBUG 48782 --- [http-nio-8082-exec-9] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
-17:05:54:940 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
-17:05:54:944 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
-17:05:54:966 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
-17:05:54:968 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
-17:05:54:968 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
-17:05:54:973 DEBUG 48782 --- [http-nio-8082-exec-3] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
-17:19:01:942  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m16s795ms).
-17:19:02:542  INFO 48782 --- [nacos-grpc-client-executor-15103] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 117
-17:19:02:543  INFO 48782 --- [nacos-grpc-client-executor-15103] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 117
-17:19:02:557  INFO 48930 --- [nacos-grpc-client-executor-15289] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 121
-17:19:02:558  INFO 48930 --- [nacos-grpc-client-executor-15289] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 121
-17:19:09:082  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m16s798ms).
-17:20:19:893  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s944ms).
-17:20:23:616  INFO 48930 --- [nacos-grpc-client-executor-15302] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 126
-17:20:23:617  INFO 48930 --- [nacos-grpc-client-executor-15302] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 126
-17:20:27:032  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s946ms).
-17:25:53:707  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m33s814ms).
-17:25:54:477  INFO 48930 --- [nacos-grpc-client-executor-15309] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 130
-17:25:54:477  INFO 48930 --- [nacos-grpc-client-executor-15309] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 130
-17:26:00:848  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m33s816ms).
-17:27:43:222  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s503ms).
-17:27:44:126  INFO 48930 --- [nacos-grpc-client-executor-15322] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 135
-17:27:44:126  INFO 48930 --- [nacos-grpc-client-executor-15322] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 135
-17:27:50:357  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s500ms).
-17:28:59:258  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s900ms).
-17:29:22:132  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s903ms).
-17:29:23:190  INFO 48930 --- [nacos-grpc-client-executor-15335] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 140
-17:29:23:191  INFO 48930 --- [nacos-grpc-client-executor-15335] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 140
-17:30:43:164  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s33ms).
-17:30:44:314  INFO 48930 --- [nacos-grpc-client-executor-15341] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 144
-17:30:44:314  INFO 48930 --- [nacos-grpc-client-executor-15341] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 144
-17:30:50:291  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s28ms).
-17:32:05:134  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s844ms).
-17:32:28:016  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s841ms).
-17:32:29:346  INFO 48930 --- [nacos-grpc-client-executor-15355] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 148
-17:32:29:346  INFO 48930 --- [nacos-grpc-client-executor-15355] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 148
-17:34:17:060  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s44ms).
-17:34:18:475  INFO 48930 --- [nacos-grpc-client-executor-15361] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 153
-17:34:18:476  INFO 48930 --- [nacos-grpc-client-executor-15361] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 153
-17:34:24:186  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s44ms).
-17:36:07:762  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s692ms).
-17:36:14:896  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s700ms).
-17:37:16:724  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s962ms).
-17:37:18:347  INFO 48782 --- [nacos-grpc-client-executor-15202] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 160
-17:37:18:348  INFO 48782 --- [nacos-grpc-client-executor-15202] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 160
-17:37:23:863  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s967ms).
-17:39:02:225  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s490ms).
-17:39:09:363  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s484ms).
-20:41:39:400  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s982ms).
-20:41:41:236  INFO 48782 --- [nacos-grpc-client-executor-17565] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 165
-20:41:41:240  INFO 48782 --- [nacos-grpc-client-executor-17565] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 165
-20:41:41:239  INFO 48930 --- [nacos-grpc-client-executor-17748] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 168
-20:41:41:241  INFO 48930 --- [nacos-grpc-client-executor-17748] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 168
-20:41:46:520  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s989ms).
-20:43:10:355  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s833ms).
-20:43:33:241  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s831ms).
-20:43:35:264  INFO 48782 --- [nacos-grpc-client-executor-17580] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 170
-20:43:35:264  INFO 48782 --- [nacos-grpc-client-executor-17580] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 170
-20:43:35:284  INFO 48930 --- [nacos-grpc-client-executor-17764] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 173
-20:43:35:285  INFO 48930 --- [nacos-grpc-client-executor-17764] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 173
-20:44:48:311  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s71ms).
-20:44:50:432  INFO 48782 --- [nacos-grpc-client-executor-17587] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 175
-20:44:50:433  INFO 48782 --- [nacos-grpc-client-executor-17587] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 175
-20:44:50:434  INFO 48930 --- [nacos-grpc-client-executor-17772] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 177
-20:44:50:434  INFO 48930 --- [nacos-grpc-client-executor-17772] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 177
-20:44:55:431  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s64ms).
-20:46:06:128  WARN 48782 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s698ms).
-20:46:29:024  WARN 48930 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s702ms).
-20:46:31:277  INFO 48782 --- [nacos-grpc-client-executor-17602] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = ClientDetectionRequest, requestId = 179
-20:46:31:277  INFO 48782 --- [nacos-grpc-client-executor-17602] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = ClientDetectionRequest, requestId = 179
-20:46:31:279  INFO 48930 --- [nacos-grpc-client-executor-17785] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = ClientDetectionRequest, requestId = 181
-20:46:31:279  INFO 48930 --- [nacos-grpc-client-executor-17785] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = ClientDetectionRequest, requestId = 181
-20:46:31:348 ERROR 48930 --- [nacos-grpc-client-executor-17786] c.a.n.c.remote.client.grpc.GrpcClient    : [1782382258007_192.168.65.1_30589]Request stream onCompleted, switch server
-20:46:31:359  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-20:46:31:526  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Success to connect a server [localhost:8848], connectionId = 1782477991407_192.168.65.1_61121
-20:46:31:526  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Abandon prev connection, server is localhost:8848, connectionId is 1782382258007_192.168.65.1_30589
-20:46:31:526  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1782382258007_192.168.65.1_30589
-20:46:31:536  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Notify disconnected event to listeners
-20:46:31:540  INFO 48930 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Notify connected event to listeners.
-20:46:31:946  INFO 48782 --- [nacos-grpc-client-executor-17603] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = NotifySubscriberRequest, requestId = 184
-20:46:31:970  INFO 48782 --- [nacos-grpc-client-executor-17603] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = NotifySubscriberRequest, requestId = 184
-20:46:33:488  INFO 48782 --- [nacos-grpc-client-executor-17604] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Receive server push request, request = NotifySubscriberRequest, requestId = 187
-20:46:33:490  INFO 48782 --- [nacos-grpc-client-executor-17604] com.alibaba.nacos.common.remote.client   : [c5b824b0-0a5f-45a0-bfc0-76301935aaa9] Ack server push request, request = NotifySubscriberRequest, requestId = 187
-20:46:33:498  INFO 48930 --- [nacos-grpc-client-executor-17794] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Receive server push request, request = NotifySubscriberRequest, requestId = 188
-20:46:33:499  INFO 48930 --- [nacos-grpc-client-executor-17794] com.alibaba.nacos.common.remote.client   : [bcc7f9e0-785e-4612-b2ab-7dbb4e516efe] Ack server push request, request = NotifySubscriberRequest, requestId = 188
+17:10:08:073  INFO 1491 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.31 on 192.168.10.102 with PID 1491 (/Users/Admin/IdeaProjects/hmall/item-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+17:10:08:075 DEBUG 1491 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:10:08:075  INFO 1491 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
+17:10:08:586  INFO 1491 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0ef60878-6374-344c-b14e-5ccdf1deccc1
+17:10:08:771  INFO 1491 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+17:10:08:775  INFO 1491 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:10:08:775  INFO 1491 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:10:08:850  INFO 1491 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:10:08:850  INFO 1491 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+17:10:09:281  INFO 1491 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:10:09:455  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785
+17:10:09:482  INFO 1491 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+17:10:09:498  INFO 1491 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+17:10:09:511  INFO 1491 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+17:10:09:512  WARN 1491 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:09:517  INFO 1491 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+17:10:09:523  INFO 1491 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+17:10:09:528  INFO 1491 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+17:10:09:530  WARN 1491 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:09:530  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] RpcClient init label, labels = {module=naming, source=sdk}
+17:10:09:531  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:10:09:531  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:10:09:532  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:10:09:532  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:10:09:897  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Success to connect to server [localhost:8848] on start up, connectionId = 1783761009740_192.168.65.1_28032
+17:10:09:897  INFO 1491 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Notify connected event to listeners.
+17:10:09:898  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:10:09:899  INFO 1491 --- [main] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$885/0x000000080064ac40
+17:10:09:974  INFO 1491 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+17:10:09:997  INFO 1491 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 172.30.193.44:8082 register finished
+17:10:10:001  INFO 1491 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:10:10:003  INFO 1491 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:10:10:016  INFO 1491 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:10:10:108  INFO 1491 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 2.362 seconds (JVM running for 2.619)
+17:10:10:564  INFO 1491 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Receive server push request, request = NotifySubscriberRequest, requestId = 4
+17:10:10:566  INFO 1491 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Ack server push request, request = NotifySubscriberRequest, requestId = 4
+17:10:16:653  INFO 1517 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.31 on 192.168.10.102 with PID 1517 (/Users/Admin/IdeaProjects/hmall/item-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+17:10:16:654 DEBUG 1517 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:10:16:654  INFO 1517 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
+17:10:17:162  INFO 1517 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0ef60878-6374-344c-b14e-5ccdf1deccc1
+17:10:17:334  INFO 1517 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+17:10:17:338  INFO 1517 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:10:17:338  INFO 1517 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:10:17:403  INFO 1517 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:10:17:404  INFO 1517 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 725 ms
+17:10:17:781  INFO 1517 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:10:17:903  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 3a6f44bf-f70d-4c12-9d19-efd9ba703ca5
+17:10:17:922  INFO 1517 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+17:10:17:935  INFO 1517 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+17:10:17:941  INFO 1517 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+17:10:17:943  WARN 1517 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:17:957  INFO 1517 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 1 keys and 5 values 
+17:10:17:963  INFO 1517 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+17:10:17:969  INFO 1517 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+17:10:17:970  WARN 1517 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:17:971  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] RpcClient init label, labels = {module=naming, source=sdk}
+17:10:17:972  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:10:17:972  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:10:17:972  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:10:17:973  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:10:18:364  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Success to connect to server [localhost:8848] on start up, connectionId = 1783761018211_192.168.65.1_21120
+17:10:18:365  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:10:18:365  INFO 1517 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Notify connected event to listeners.
+17:10:18:366  INFO 1517 --- [main] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$885/0x000000080064ac40
+17:10:18:439  INFO 1517 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+17:10:18:449  INFO 1517 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 172.30.193.44:8181 register finished
+17:10:18:452  INFO 1517 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:10:18:454  INFO 1517 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:10:18:467  INFO 1517 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:10:18:561  INFO 1517 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 2.223 seconds (JVM running for 2.448)
+17:10:18:959  INFO 1491 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Receive server push request, request = NotifySubscriberRequest, requestId = 10
+17:10:18:961  INFO 1491 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [dee9c8a3-8286-4e5f-b1ea-2c9da4ad8785] Ack server push request, request = NotifySubscriberRequest, requestId = 10
+17:10:18:971  INFO 1517 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Receive server push request, request = NotifySubscriberRequest, requestId = 9
+17:10:18:974  INFO 1517 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [3a6f44bf-f70d-4c12-9d19-efd9ba703ca5] Ack server push request, request = NotifySubscriberRequest, requestId = 9
+17:18:51:442  INFO 1517 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:18:51:442  INFO 1517 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+17:18:51:450  INFO 1517 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+17:18:51:485 ERROR 1517 --- [http-nio-8181-exec-1] c.h.common.advice.CommonExceptionAdvice  : 其他异常 uri : /items/test -> 
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "test"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "test"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:692) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.27.jar:5.3.27]
+	... 47 common frames omitted
+
+17:18:53:652  INFO 1491 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:18:53:652  INFO 1491 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+17:18:53:656  INFO 1491 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+17:18:53:676 ERROR 1491 --- [http-nio-8082-exec-1] c.h.common.advice.CommonExceptionAdvice  : 其他异常 uri : /items/test -> 
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "test"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "test"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:692) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.27.jar:5.3.27]
+	... 47 common frames omitted
+
+17:26:07:044 ERROR 1517 --- [http-nio-8181-exec-2] c.h.common.advice.CommonExceptionAdvice  : 其他异常 uri : /items/test -> 
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "test"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "test"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:692) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1144) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.27.jar:5.3.27]
+	... 47 common frames omitted
+

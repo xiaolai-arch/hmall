@@ -1,247 +1,80 @@
-00:31:47:445  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s351ms).
-00:33:40:471  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s996ms).
-00:33:41:020  INFO 68592 --- [nacos-grpc-client-executor-1606] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 65
-00:33:41:021  INFO 68592 --- [nacos-grpc-client-executor-1606] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 65
-00:35:06:081  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s611ms).
-00:35:06:726  INFO 68592 --- [nacos-grpc-client-executor-1614] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 68
-00:35:06:726  INFO 68592 --- [nacos-grpc-client-executor-1614] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 68
-00:36:56:025  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s936ms).
-00:36:56:812  INFO 68592 --- [nacos-grpc-client-executor-1631] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 71
-00:36:56:816  INFO 68592 --- [nacos-grpc-client-executor-1631] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 71
-00:38:48:459  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s429ms).
-00:38:49:405  INFO 68592 --- [nacos-grpc-client-executor-1645] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 74
-00:38:49:405  INFO 68592 --- [nacos-grpc-client-executor-1645] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 74
-00:40:07:998  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s539ms).
-00:40:09:010  INFO 68592 --- [nacos-grpc-client-executor-1653] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 76
-00:40:09:010  INFO 68592 --- [nacos-grpc-client-executor-1653] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 76
-00:42:01:389  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s387ms).
-00:42:02:524  INFO 68592 --- [nacos-grpc-client-executor-1666] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 77
-00:42:02:524  INFO 68592 --- [nacos-grpc-client-executor-1666] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 77
-00:43:09:481  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s92ms).
-00:43:10:676  INFO 68592 --- [nacos-grpc-client-executor-1673] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 78
-00:43:10:676  INFO 68592 --- [nacos-grpc-client-executor-1673] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 78
-00:44:50:277  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s785ms).
-00:44:51:590  INFO 68592 --- [nacos-grpc-client-executor-1688] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 79
-00:44:51:591  INFO 68592 --- [nacos-grpc-client-executor-1688] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 79
-00:46:01:675  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s398ms).
-00:46:03:049  INFO 68592 --- [nacos-grpc-client-executor-1696] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 80
-00:46:03:050  INFO 68592 --- [nacos-grpc-client-executor-1696] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 80
-00:47:41:292  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s607ms).
-00:47:42:803  INFO 68592 --- [nacos-grpc-client-executor-1710] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 81
-00:47:42:807  INFO 68592 --- [nacos-grpc-client-executor-1710] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 81
-00:49:30:575  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s273ms).
-00:49:32:321  INFO 68592 --- [nacos-grpc-client-executor-1725] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 82
-00:49:32:322  INFO 68592 --- [nacos-grpc-client-executor-1725] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 82
-00:50:42:051  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s475ms).
-00:52:30:295  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s234ms).
-00:53:51:391  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s96ms).
-00:53:53:402  INFO 68592 --- [nacos-grpc-client-executor-1751] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 83
-00:53:53:403  INFO 68592 --- [nacos-grpc-client-executor-1751] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 83
-03:24:53:695  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s847ms), soft-evicting connections from pool.
-08:32:51:477  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s225ms).
-09:25:19:012  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m27s535ms).
-09:47:40:269  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m21s258ms).
-10:47:39:172  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m58s903ms).
-11:14:17:959  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m38s787ms).
-12:27:12:833  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m15s520ms).
-12:35:33:072  INFO 68592 --- [nacos-grpc-client-executor-8121] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 86
-12:35:33:073  INFO 68592 --- [nacos-grpc-client-executor-8121] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 86
-12:43:05:903  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s71ms).
-12:43:08:706  INFO 68592 --- [nacos-grpc-client-executor-8129] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 89
-12:43:08:707  INFO 68592 --- [nacos-grpc-client-executor-8129] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 89
-13:51:41:863  INFO 20850 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 26.0.1 on MacBook-Pro.local with PID 20850 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
-13:51:41:866 DEBUG 20850 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-13:51:41:866  INFO 20850 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-13:51:42:411  INFO 20850 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3523a153-1a1b-3a0c-892d-437263623bea
-13:51:42:641  INFO 20850 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-13:51:42:646  INFO 20850 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13:51:42:646  INFO 20850 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-13:51:42:712  INFO 20850 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13:51:42:712  INFO 20850 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
-13:51:42:745  WARN 20850 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.ItemClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-13:51:42:746  INFO 20850 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-13:51:42:755  INFO 20850 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-13:51:42:763 ERROR 20850 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.hmall.trade.service.impl.OrderServiceImpl required a bean of type 'com.hmall.api.client.ItemClient' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your configuration.
-
-13:52:01:820  INFO 20900 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.31 on MacBook-Pro.local with PID 20900 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
-13:52:01:821 DEBUG 20900 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-13:52:01:821  INFO 20900 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-13:52:02:345  INFO 20900 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3523a153-1a1b-3a0c-892d-437263623bea
-13:52:02:519  INFO 20900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-13:52:02:522  INFO 20900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13:52:02:522  INFO 20900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-13:52:02:586  INFO 20900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13:52:02:586  INFO 20900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
-13:52:02:618  WARN 20900 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [/Users/Admin/IdeaProjects/hmall/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.api.client.ItemClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-13:52:02:619  INFO 20900 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-13:52:02:629  INFO 20900 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-13:52:02:637 ERROR 20900 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.hmall.trade.service.impl.OrderServiceImpl required a bean of type 'com.hmall.api.client.ItemClient' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your configuration.
-
-13:53:30:707  INFO 21031 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.31 on MacBook-Pro.local with PID 21031 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
-13:53:30:709 DEBUG 21031 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-13:53:30:709  INFO 21031 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
-13:53:31:204  INFO 21031 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=84b733ad-96be-3a43-b3da-5c74bf23d21a
-13:53:31:401  INFO 21031 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-13:53:31:405  INFO 21031 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13:53:31:405  INFO 21031 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-13:53:31:475  INFO 21031 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13:53:31:475  INFO 21031 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
-13:53:31:575  INFO 21031 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-13:53:31:967  INFO 21031 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-13:53:32:227  INFO 21031 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-13:53:32:342  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 93822584-4df8-46e6-b307-9e17f382128e
-13:53:32:362  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
-13:53:32:374  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
-13:53:32:380  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
-13:53:32:382  WARN 21031 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-13:53:32:386  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
-13:53:32:392  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
-13:53:32:397  INFO 21031 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
-13:53:32:398  WARN 21031 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-13:53:32:398  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] RpcClient init label, labels = {module=naming, source=sdk}
-13:53:32:399  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-13:53:32:399  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-13:53:32:400  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-13:53:32:401  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
-13:53:32:861  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Success to connect to server [localhost:8848] on start up, connectionId = 1782453212717_192.168.65.1_26533
-13:53:32:861  INFO 21031 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Notify connected event to listeners.
-13:53:32:863  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-13:53:32:863  INFO 21031 --- [main] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$986/0x0000000800719840
-13:53:32:931  INFO 21031 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-13:53:32:941  INFO 21031 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 172.30.193.44:8085 register finished
-13:53:32:945  INFO 21031 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-13:53:32:947  INFO 21031 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-13:53:32:955  INFO 21031 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-13:53:32:996  INFO 21031 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 2.535 seconds (JVM running for 2.862)
-13:53:33:523  INFO 68592 --- [nacos-grpc-client-executor-9141] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = NotifySubscriberRequest, requestId = 94
-13:53:33:527  INFO 21031 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = NotifySubscriberRequest, requestId = 93
-13:53:33:528  INFO 68592 --- [nacos-grpc-client-executor-9141] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = NotifySubscriberRequest, requestId = 94
-13:53:33:528  INFO 21031 --- [nacos-grpc-client-executor-11] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = NotifySubscriberRequest, requestId = 93
-13:53:43:323  INFO 21031 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:53:43:324  INFO 21031 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-13:53:43:331  INFO 21031 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-13:54:19:710  INFO 21031 --- [http-nio-8085-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-13:54:19:868  INFO 21031 --- [http-nio-8085-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-13:54:19:872 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
-13:54:19:884 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 123865420(Long)
-13:54:19:906 DEBUG 21031 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
-15:46:10:833  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s747ms).
-15:46:14:291  INFO 68592 --- [nacos-grpc-client-executor-10416] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 111
-15:46:14:291  INFO 68592 --- [nacos-grpc-client-executor-10416] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 111
-15:46:14:339  INFO 21031 --- [nacos-grpc-client-executor-1569] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 108
-15:46:14:344  INFO 21031 --- [nacos-grpc-client-executor-1569] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 108
-15:46:24:635  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m33s748ms).
-17:18:58:451  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m16s797ms).
-17:19:02:549  INFO 21031 --- [nacos-grpc-client-executor-2792] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 118
-17:19:02:550  INFO 21031 --- [nacos-grpc-client-executor-2792] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 118
-17:19:02:562  INFO 68592 --- [nacos-grpc-client-executor-11655] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 122
-17:19:02:562  INFO 68592 --- [nacos-grpc-client-executor-11655] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 122
-17:19:12:293  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m16s798ms).
-17:20:16:411  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s945ms).
-17:20:20:601  INFO 21031 --- [nacos-grpc-client-executor-2806] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 124
-17:20:20:602  INFO 21031 --- [nacos-grpc-client-executor-2806] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 124
-17:20:20:603  INFO 68592 --- [nacos-grpc-client-executor-11669] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 125
-17:20:20:603  INFO 68592 --- [nacos-grpc-client-executor-11669] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 125
-17:20:30:249  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s946ms).
-17:25:54:476  INFO 21031 --- [nacos-grpc-client-executor-2813] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 128
-17:25:54:477  INFO 68592 --- [nacos-grpc-client-executor-11677] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 131
-17:25:54:478  INFO 21031 --- [nacos-grpc-client-executor-2813] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 128
-17:25:54:478  INFO 68592 --- [nacos-grpc-client-executor-11677] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 131
-17:26:04:065  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m33s815ms).
-17:26:20:235  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m33s813ms).
-17:27:39:739  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s504ms).
-17:27:44:121  INFO 21031 --- [nacos-grpc-client-executor-2827] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 133
-17:27:44:122  INFO 21031 --- [nacos-grpc-client-executor-2827] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 133
-17:27:44:129  INFO 68592 --- [nacos-grpc-client-executor-11691] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 136
-17:27:44:129  INFO 68592 --- [nacos-grpc-client-executor-11691] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 136
-17:27:53:570  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s498ms).
-17:29:02:482  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s911ms).
-17:29:18:650  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s902ms).
-17:29:23:182  INFO 21031 --- [nacos-grpc-client-executor-2840] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 138
-17:29:23:183  INFO 21031 --- [nacos-grpc-client-executor-2840] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 138
-17:29:23:193  INFO 68592 --- [nacos-grpc-client-executor-11705] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 141
-17:29:23:193  INFO 68592 --- [nacos-grpc-client-executor-11705] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 141
-17:30:39:678  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s28ms).
-17:30:44:318  INFO 21031 --- [nacos-grpc-client-executor-2846] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 143
-17:30:44:318  INFO 21031 --- [nacos-grpc-client-executor-2846] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 143
-17:30:44:322  INFO 68592 --- [nacos-grpc-client-executor-11713] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 145
-17:30:44:322  INFO 68592 --- [nacos-grpc-client-executor-11713] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 145
-17:30:53:524  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s29ms).
-17:32:08:366  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s842ms).
-17:32:24:523  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s839ms).
-17:32:29:341  INFO 21031 --- [nacos-grpc-client-executor-2859] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 147
-17:32:29:341  INFO 21031 --- [nacos-grpc-client-executor-2859] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 147
-17:32:29:347  INFO 68592 --- [nacos-grpc-client-executor-11725] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 149
-17:32:29:347  INFO 68592 --- [nacos-grpc-client-executor-11725] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 149
-17:34:13:568  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s46ms).
-17:34:18:475  INFO 21031 --- [nacos-grpc-client-executor-2865] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 151
-17:34:18:476  INFO 21031 --- [nacos-grpc-client-executor-2865] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 151
-17:34:18:476  INFO 68592 --- [nacos-grpc-client-executor-11735] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 154
-17:34:18:476  INFO 68592 --- [nacos-grpc-client-executor-11735] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 154
-17:34:27:422  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s43ms).
-17:35:48:124  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s702ms).
-17:36:04:277  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s699ms).
-17:36:09:286  INFO 21031 --- [nacos-grpc-client-executor-2879] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 156
-17:36:09:287  INFO 21031 --- [nacos-grpc-client-executor-2879] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 156
-17:36:09:289  INFO 68592 --- [nacos-grpc-client-executor-11751] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 158
-17:36:09:289  INFO 68592 --- [nacos-grpc-client-executor-11751] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 158
-17:37:18:349  INFO 21031 --- [nacos-grpc-client-executor-2886] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 161
-17:37:18:350  INFO 21031 --- [nacos-grpc-client-executor-2886] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 161
-17:37:18:352  INFO 68592 --- [nacos-grpc-client-executor-11757] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 162
-17:37:18:352  INFO 68592 --- [nacos-grpc-client-executor-11757] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 162
-17:37:27:097  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s963ms).
-17:37:43:251  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s963ms).
-17:38:58:743  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s491ms).
-17:39:04:045  INFO 21031 --- [nacos-grpc-client-executor-2901] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Receive server push request, request = ClientDetectionRequest, requestId = 164
-17:39:04:045  INFO 21031 --- [nacos-grpc-client-executor-2901] com.alibaba.nacos.common.remote.client   : [93822584-4df8-46e6-b307-9e17f382128e] Ack server push request, request = ClientDetectionRequest, requestId = 164
-17:39:12:593  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s489ms).
-20:41:35:893  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s985ms).
-20:41:41:269  INFO 68592 --- [nacos-grpc-client-executor-14150] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 169
-20:41:41:270  INFO 68592 --- [nacos-grpc-client-executor-14150] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 169
-20:41:49:708  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s984ms).
-20:43:13:535  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s828ms).
-20:43:29:735  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s829ms).
-20:43:35:285  INFO 68592 --- [nacos-grpc-client-executor-14167] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 174
-20:43:35:285  INFO 68592 --- [nacos-grpc-client-executor-14167] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 174
-20:44:44:807  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s71ms).
-20:44:50:435  INFO 68592 --- [nacos-grpc-client-executor-14173] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 178
-20:44:50:435  INFO 68592 --- [nacos-grpc-client-executor-14173] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 178
-20:44:58:609  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s67ms).
-20:46:09:309  WARN 21031 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s700ms).
-20:46:25:515  WARN 68592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s695ms).
-20:46:31:279  INFO 68592 --- [nacos-grpc-client-executor-14188] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = ClientDetectionRequest, requestId = 182
-20:46:31:280  INFO 68592 --- [nacos-grpc-client-executor-14188] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = ClientDetectionRequest, requestId = 182
-20:46:31:945  INFO 68592 --- [nacos-grpc-client-executor-14189] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = NotifySubscriberRequest, requestId = 185
-20:46:31:957  INFO 68592 --- [nacos-grpc-client-executor-14189] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = NotifySubscriberRequest, requestId = 185
-20:46:33:515  INFO 68592 --- [nacos-grpc-client-executor-14190] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Receive server push request, request = NotifySubscriberRequest, requestId = 189
-20:46:33:516  INFO 68592 --- [nacos-grpc-client-executor-14190] com.alibaba.nacos.common.remote.client   : [af3a6bf8-4751-4a40-bf2b-ad06d7cd0943] Ack server push request, request = NotifySubscriberRequest, requestId = 189
+17:10:12:940  INFO 1508 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.31 on 192.168.10.102 with PID 1508 (/Users/Admin/IdeaProjects/hmall/trade-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+17:10:12:942 DEBUG 1508 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:10:12:943  INFO 1508 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+17:10:13:401  INFO 1508 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=77edf132-87e4-34c5-b3c8-0726c02c6ca3
+17:10:13:563  INFO 1508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+17:10:13:567  INFO 1508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:10:13:568  INFO 1508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:10:13:628  INFO 1508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:10:13:628  INFO 1508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 662 ms
+17:10:13:713  INFO 1508 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+17:10:13:957  INFO 1508 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+17:10:14:204  INFO 1508 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:10:14:312  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa
+17:10:14:335  INFO 1508 --- [main] org.reflections.Reflections              : Reflections took 13 ms to scan 1 urls, producing 3 keys and 6 values 
+17:10:14:348  INFO 1508 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+17:10:14:357  INFO 1508 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+17:10:14:359  WARN 1508 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:14:365  INFO 1508 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+17:10:14:374  INFO 1508 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+17:10:14:380  INFO 1508 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+17:10:14:381  WARN 1508 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:14:382  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] RpcClient init label, labels = {module=naming, source=sdk}
+17:10:14:383  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:10:14:383  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:10:14:383  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:10:14:384  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:10:14:795  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Success to connect to server [localhost:8848] on start up, connectionId = 1783761014609_192.168.65.1_59448
+17:10:14:796  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:10:14:795  INFO 1508 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Notify connected event to listeners.
+17:10:14:796  INFO 1508 --- [main] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$938/0x00000008007a7840
+17:10:14:878  INFO 1508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+17:10:14:891  INFO 1508 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 172.30.193.44:8085 register finished
+17:10:14:895  INFO 1508 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:10:14:897  INFO 1508 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:10:14:907  INFO 1508 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:10:14:960  INFO 1508 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 2.352 seconds (JVM running for 2.583)
+17:10:15:450  INFO 1508 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Receive server push request, request = NotifySubscriberRequest, requestId = 7
+17:10:15:452  INFO 1508 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Ack server push request, request = NotifySubscriberRequest, requestId = 7
+17:10:24:036  INFO 1508 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:10:24:036  INFO 1508 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+17:10:24:038  INFO 1508 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+17:10:36:992  INFO 1596 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.31 on 192.168.10.102 with PID 1596 (/Users/Admin/IdeaProjects/hmall/cart-service/target/classes started by Admin in /Users/Admin/IdeaProjects/hmall)
+17:10:36:993 DEBUG 1596 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:10:36:994  INFO 1596 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "dev"
+17:10:37:462  INFO 1596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bcdad8a3-a3db-3eb0-a975-a680de9b1568
+17:10:37:640  INFO 1596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+17:10:37:644  INFO 1596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:10:37:644  INFO 1596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:10:37:710  INFO 1596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:10:37:710  INFO 1596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 698 ms
+17:10:37:820  INFO 1596 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+17:10:38:253  INFO 1596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:10:38:357  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of add3c481-0121-4bdd-9c90-bfdefb86dc53
+17:10:38:377  INFO 1596 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 3 keys and 6 values 
+17:10:38:390  INFO 1596 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+17:10:38:396  INFO 1596 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+17:10:38:397  WARN 1596 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:38:402  INFO 1596 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+17:10:38:408  INFO 1596 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+17:10:38:413  INFO 1596 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+17:10:38:415  WARN 1596 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:10:38:415  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] RpcClient init label, labels = {module=naming, source=sdk}
+17:10:38:416  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:10:38:417  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:10:38:417  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:10:38:418  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:10:38:805  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Success to connect to server [localhost:8848] on start up, connectionId = 1783761038645_192.168.65.1_60660
+17:10:38:805  INFO 1596 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Notify connected event to listeners.
+17:10:38:806  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:10:38:807  INFO 1596 --- [main] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$941/0x00000008007a0c40
+17:10:38:894  INFO 1596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+17:10:38:907  INFO 1596 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 172.30.193.44:8083 register finished
+17:10:38:908  INFO 1596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:10:38:909  INFO 1596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:10:38:920  INFO 1596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:10:38:960  INFO 1596 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 2.308 seconds (JVM running for 2.555)
+17:10:39:438  INFO 1596 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Receive server push request, request = NotifySubscriberRequest, requestId = 14
+17:10:39:442  INFO 1596 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [add3c481-0121-4bdd-9c90-bfdefb86dc53] Ack server push request, request = NotifySubscriberRequest, requestId = 14
+17:10:39:449  INFO 1508 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Receive server push request, request = NotifySubscriberRequest, requestId = 16
+17:10:39:454  INFO 1508 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [e8e543f3-ecba-4e4d-8f9e-221aac8bd8fa] Ack server push request, request = NotifySubscriberRequest, requestId = 16
