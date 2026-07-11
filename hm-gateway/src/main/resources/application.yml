@@ -44,4 +44,4 @@ spring:
             - Path=/pay-orders/**
       # 注意缩进！！！
       default-filters: #默认过滤器 会对所有的路由生效
-        - PrintAny
+        - PrintAny=1,2,3
