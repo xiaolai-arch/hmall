@@ -24,11 +24,6 @@ spring:
         # ========== 商品服务 ==========
         - id: item-service
           uri: lb://item-service
-#          predicates:
-#            - Path=/api/items/**,/api/search/**   # /items/** 和 /search/** 都转发到商品服务
-#            - Method=GET,POST
-#          filters:
-#            - StripPrefix=1  # 去掉前缀，即 /api/items/1 转发到 /items/1
           predicates:
             - Path=/items/**,/search/**
         # ========== 用户服务 ==========
@@ -45,3 +40,15 @@ spring:
       # 注意缩进！！！
       default-filters: #默认过滤器 会对所有的路由生效
         - PrintAny=1,2,3
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi

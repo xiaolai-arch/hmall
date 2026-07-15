@@ -1,7 +1,7 @@
 services:
   # ========== MySQL 数据库 ==========
   mysql:
-    image: mysql:latest
+    image: mysql:8.0
     container_name: hmall-mysql
     restart: always
     environment:
@@ -12,8 +12,8 @@ services:
     volumes:
       # 挂载自定义 MySQL 配置
       - ./mysql/conf/hm.cnf:/etc/mysql/conf.d/hm.cnf
-      # 挂载初始化 SQL（首次启动自动执行）
-      - ./mysql/init/hmall.sql:/docker-entrypoint-initdb.d/01-hmall.sql
+      # 挂载所有初始化 SQL（首次启动自动按文件名顺序执行）
+      - ./mysql/init:/docker-entrypoint-initdb.d
       # 数据持久化
       - hmall-mysql-data:/var/lib/mysql
     networks:
@@ -42,14 +42,179 @@ services:
       timeout: 5s
       retries: 5
 
-  # ========== Spring Boot 后端服务 ==========
-  hmall:
+  # ========== Nacos 注册中心 & 配置中心 ==========
+  nacos:
+    image: nacos/nacos-server:v2.2.3
+    container_name: hmall-nacos
+    restart: always
+    ports:
+      - "8848:8848"   # Nacos HTTP 控制台
+      - "9848:9848"   # Nacos gRPC（2.x 客户端通信端口）
+    environment:
+      MODE: standalone
+      NACOS_AUTH_ENABLE: "false"
+      TZ: Asia/Shanghai
+      JAVA_OPT: "-XX:-UseContainerSupport"
+    volumes:
+      - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8848/nacos/v1/console/health/readiness"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  # ========== Spring Cloud Gateway 网关 ==========
+  hm-gateway:
+    build:
+      context: .
+      dockerfile: ./hm-gateway/Dockerfile
+    image: hmall-gateway:latest
+    container_name: hmall-gateway
+    restart: always
+    depends_on:
+      nacos:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== 商品服务 (item-service) ==========
+  item-service:
+    build:
+      context: .
+      dockerfile: ./item-service/Dockerfile
+    image: hmall-item-service:latest
+    container_name: hmall-item-service
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+      nacos:
+        condition: service_healthy
+    ports:
+      - "8082:8082"
+    environment:
+      HM_DB_HOST: mysql
+      HM_DB_PORT: "3306"
+      HM_DB_PW: "123"
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
+      SPRING_REDIS_HOST: redis
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== 购物车服务 (cart-service) ==========
+  cart-service:
+    build:
+      context: .
+      dockerfile: ./cart-service/Dockerfile
+    image: hmall-cart-service:latest
+    container_name: hmall-cart-service
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+      nacos:
+        condition: service_healthy
+    ports:
+      - "8083:8083"
+    environment:
+      HM_DB_HOST: mysql
+      HM_DB_PORT: "3306"
+      HM_DB_PW: "123"
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
+      SPRING_REDIS_HOST: redis
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== 用户服务 (user-service) ==========
+  user-service:
+    build:
+      context: .
+      dockerfile: ./user-service/Dockerfile
+    image: hmall-user-service:latest
+    container_name: hmall-user-service
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+      nacos:
+        condition: service_healthy
+    ports:
+      - "8084:8084"
+    environment:
+      HM_DB_HOST: mysql
+      HM_DB_PORT: "3306"
+      HM_DB_PW: "123"
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
+      SPRING_REDIS_HOST: redis
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== 交易服务 (trade-service) ==========
+  trade-service:
+    build:
+      context: .
+      dockerfile: ./trade-service/Dockerfile
+    image: hmall-trade-service:latest
+    container_name: hmall-trade-service
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+      nacos:
+        condition: service_healthy
+    ports:
+      - "8085:8085"
+    environment:
+      HM_DB_HOST: mysql
+      HM_DB_PORT: "3306"
+      HM_DB_PW: "123"
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
+      SPRING_REDIS_HOST: redis
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== 支付服务 (pay-service) ==========
+  pay-service:
+    build:
+      context: .
+      dockerfile: ./pay-service/Dockerfile
+    image: hmall-pay-service:latest
+    container_name: hmall-pay-service
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+      nacos:
+        condition: service_healthy
+    ports:
+      - "8086:8086"
+    environment:
+      HM_DB_HOST: mysql
+      HM_DB_PORT: "3306"
+      HM_DB_PW: "123"
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
+      SPRING_REDIS_HOST: redis
+      TZ: Asia/Shanghai
+    networks:
+      - hmall-net
+
+  # ========== 主服务 (hm-service) - 通用服务 ==========
+  hm-service:
     build:
       context: .
       dockerfile: ./hm-service/Dockerfile
-      pull: false
     image: hmall-service:latest
-    pull_policy: build
     container_name: hmall-service
     restart: always
     depends_on:
@@ -57,13 +222,14 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+      nacos:
+        condition: service_healthy
     ports:
-      - "8081:8080"
+      - "8081:8081"
     environment:
-      # 数据库连接（对应 application.yaml 中的 ${hm.db.host} 和 ${hm.db.pw}）
       HM_DB_HOST: mysql
       HM_DB_PW: "123"
-      # Redis 连接
+      SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
       SPRING_REDIS_HOST: redis
       TZ: Asia/Shanghai
     networks:
@@ -71,11 +237,11 @@ services:
 
   # ========== Nginx 前端代理 ==========
   nginx:
-    image: nginx:latest
+    image: nginx:stable-alpine
     container_name: hmall-nginx
     restart: always
     depends_on:
-      - hmall
+      - hm-gateway
     ports:
       # 用户端 (portal)
       - "18080:18080"

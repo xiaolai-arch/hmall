@@ -16,10 +16,10 @@ COPY hm-common/src ./hm-common/src
 COPY hm-service/src ./hm-service/src
 
 # 编译打包（跳过测试，加速构建）
-RUN mvn clean package -DskipTests -B
+RUN mvn clean package -pl hm-common,hm-service -DskipTests -B
 
 # ========== 阶段2：运行（精简 JRE 镜像） ==========
-FROM openjdk:11.0-jre-buster
+FROM eclipse-temurin:11-jre
 
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

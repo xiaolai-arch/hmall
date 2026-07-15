@@ -6,18 +6,20 @@
 # Git
 .git/
 .gitignore
-# Docker 相关
+# Git stats
+.accelerate/
+# Docker 编排文件（不需要打进镜像）
 docker-compose.yml
-Dockerfile
 # 构建输出
 target/
 */target/
-# 镜像 tar 包
-images/
 # 日志
 logs/
-# 前端（不需要打进 jar 里）
+# 前端（通过 Volume 挂载，不需要打进镜像）
 nginx/
+# 数据库初始化（通过 Volume 挂载）
+mysql/
+# SQL 源文件（已复制到 mysql/init）
+sql/
 # 其他
-.ci/
 *.md
