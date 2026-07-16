@@ -1,0 +1,91 @@
+18:23:49:622  INFO 25544 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.15.1 on LAPTOP-IVU7MJ6V with PID 25544 (D:\AAA_Web\IdeaProjects\hmall\trade-service\target\classes started by kurumi in D:\AAA_Web\IdeaProjects\hmall)
+18:23:49:623 DEBUG 25544 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:23:49:623  INFO 25544 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+18:23:50:292  INFO 25544 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e982058c-39c1-339c-96a7-fc383989a981
+18:23:50:560  INFO 25544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+18:23:50:568  INFO 25544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:23:50:569  INFO 25544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:23:50:698  INFO 25544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:23:50:699  INFO 25544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1050 ms
+18:23:50:851  INFO 25544 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+18:23:53:408  INFO 25544 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+18:23:54:602  INFO 25544 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:23:55:678  WARN 25544 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'nacosWatch'; nested exception is java.lang.RuntimeException: ErrCode:-400, ErrMsg:Shutdown in progress
+18:23:55:681 ERROR 25544 --- [main] c.a.cloud.nacos.discovery.NacosWatch     : namingService unsubscribe failed, properties:NacosDiscoveryProperties{serverAddr='localhost:8848', username='', password='', endpoint='', namespace='', watchDelay=30000, logName='', service='trade-service', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.10.101', networkInterface='', port=-1, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}
+
+java.lang.RuntimeException: ErrCode:-400, ErrMsg:Could not initialize class com.alibaba.nacos.common.notify.NotifyCenter
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:102) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.buildNamingService(NacosServiceManager.java:90) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.getNamingService(NacosServiceManager.java:46) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.stop(NacosWatch.java:173) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.destroy(NacosWatch.java:204) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1108) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.TradeApplication.main(TradeApplication.java:14) ~[classes/:na]
+Caused by: com.alibaba.nacos.api.exception.NacosException: java.lang.reflect.InvocationTargetException
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:61) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:99) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	... 19 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:59) ~[nacos-client-2.0.4.jar:na]
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.alibaba.nacos.common.notify.NotifyCenter
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:92) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81) ~[nacos-client-2.0.4.jar:na]
+	... 26 common frames omitted
+
+18:24:01:900  INFO 42000 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.15.1 on LAPTOP-IVU7MJ6V with PID 42000 (D:\AAA_Web\IdeaProjects\hmall\trade-service\target\classes started by kurumi in D:\AAA_Web\IdeaProjects\hmall)
+18:24:01:901 DEBUG 42000 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:24:01:901  INFO 42000 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "dev"
+18:24:02:473  INFO 42000 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e982058c-39c1-339c-96a7-fc383989a981
+18:24:02:706  INFO 42000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+18:24:02:712  INFO 42000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:24:02:713  INFO 42000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:24:02:815  INFO 42000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:24:02:815  INFO 42000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 888 ms
+18:24:02:932  INFO 42000 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+18:24:05:678  INFO 42000 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+18:24:07:360  INFO 42000 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:24:08:912  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 84360526-5b44-4123-a496-09e7e55e86ea
+18:24:08:945  INFO 42000 --- [main] org.reflections.Reflections              : Reflections took 18 ms to scan 1 urls, producing 3 keys and 6 values 
+18:24:08:964  INFO 42000 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+18:24:08:971  INFO 42000 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+18:24:08:973  WARN 42000 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:24:08:978  INFO 42000 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+18:24:08:987  INFO 42000 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+18:24:08:996  INFO 42000 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+18:24:08:998  WARN 42000 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:24:08:998  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] RpcClient init label, labels = {module=naming, source=sdk}
+18:24:09:000  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:24:09:000  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:24:09:000  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:24:09:001  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+18:24:12:850  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Success to connect to server [localhost:8848] on start up, connectionId = 1784111052659_172.18.0.1_57594
+18:24:12:852  INFO 42000 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Notify connected event to listeners.
+18:24:12:852  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:24:12:853  INFO 42000 --- [main] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$996/0x0000000800719040
+18:24:12:893  INFO 42000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+18:24:12:903  INFO 42000 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.10.101:8085 register finished
+18:24:13:378  INFO 42000 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Receive server push request, request = NotifySubscriberRequest, requestId = 32
+18:24:13:380  INFO 42000 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [84360526-5b44-4123-a496-09e7e55e86ea] Ack server push request, request = NotifySubscriberRequest, requestId = 32
+18:24:13:921  INFO 42000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:24:13:924  INFO 42000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:24:13:937  INFO 42000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:24:13:985  INFO 42000 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 13.478 seconds (JVM running for 14.395)

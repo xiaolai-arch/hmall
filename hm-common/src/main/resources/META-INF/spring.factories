@@ -1,4 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.hmall.common.config.MyBatisConfig,\
   com.hmall.common.config.JsonConfig,\
-  com.hmall.common.advice.CommonExceptionAdvice
+  com.hmall.common.advice.CommonExceptionAdvice,\
+  com.hmall.common.config.MVCConfig
