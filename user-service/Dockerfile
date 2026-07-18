@@ -15,6 +15,8 @@ COPY user-service/pom.xml ./user-service/
 COPY pay-service/pom.xml ./pay-service/
 COPY hm-gateway/pom.xml ./hm-gateway/
 
+COPY settings.xml /root/.m2/settings.xml
+
 # 下载依赖（这层会被缓存，除非 pom.xml 变化）
 RUN mvn dependency:go-offline -B
 
