@@ -54,6 +54,7 @@ hm:
       - /users/login
       - /items/**
       - /hi
+      - /users/money/**
 feign:
   okhttp:
     enabled: true # 开启okhttp的feign底层请求调用客户端okhttp
