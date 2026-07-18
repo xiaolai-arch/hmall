@@ -11,19 +11,8 @@ spring:
       config: #共享配置信息
         file-extension: yaml # 配置扩展名
         shared-configs:
-          - data-id: shared-jdbc-yaml
-          - data-id: shared-log-yaml
-          - data-id: shared-swagger-yaml
-  redis:
-    host: localhost
-    port: 6379
-hm:
-  db:
-    host: localhost
-    port: 3307
-    database: hm-cart
-    pw: 123
-  swagger:
-    title: 购物车服务接口文档
-    package: com.hmall.cart.controller
-
+          - data-id: shared-jdbc.yaml
+          - data-id: shared-log.yaml
+          - data-id: shared-swagger.yaml
+          - data-id: cart-service.yaml
+            refresh: true
