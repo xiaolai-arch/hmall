@@ -1,0 +1,16 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: pay-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config: #共享配置信息
+        file-extension: yaml # 配置扩展名
+        shared-configs:
+          - data-id: shared-jdbc.yaml
+          - data-id: shared-log.yaml
+          - data-id: shared-swagger.yaml

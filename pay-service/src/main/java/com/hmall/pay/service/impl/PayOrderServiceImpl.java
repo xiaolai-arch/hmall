@@ -8,7 +8,6 @@ import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.UserContext;
 import com.hmall.pay.domain.dto.PayApplyDTO;
 import com.hmall.pay.domain.dto.PayOrderFormDTO;
-import com.hmall.api.po.Order;
 import com.hmall.pay.domain.po.PayOrder;
 import com.hmall.pay.enums.PayStatus;
 import com.hmall.pay.mapper.PayOrderMapper;
@@ -65,11 +64,7 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
             throw new BizIllegalException("交易已支付或关闭！");
         }
         // 5.修改订单状态
-        Order order = new Order();
-        order.setId(po.getBizOrderNo());
-        order.setStatus(2);
-        order.setPayTime(LocalDateTime.now());
-        orderClient.updateById(order);
+        orderClient.markOrderPaySuccess(po.getBizOrderNo());
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {
