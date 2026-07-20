@@ -1,9 +1,17 @@
 feign:
   okhttp:
     enabled: true # 开启okhttp的feign底层请求调用客户端okhttp
+  sentinel:
+    enabled: true # 开启feign对sentinel的熔断支持，就是某个具体路径
 hm:
   db:
     database: hm-cart
   swagger:
     title: 购物车服务接口文档
     package: com.hmall.cart.controller
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 按 HTTP 方法区分资源，如 GET:/orders/{id} 和 POST:/orders 独立限流

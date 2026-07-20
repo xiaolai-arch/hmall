@@ -1,9 +1,12 @@
 package com.hmall.api.config;
 
+import com.hmall.api.client.fallback.CartClientFallback;
+import com.hmall.api.client.fallback.ItemClientFallback;
 import com.hmall.common.utils.UserContext;
 import feign.Logger;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.User;
 import org.springframework.context.annotation.Bean;
 
@@ -28,5 +31,13 @@ public class DefaultFeignConfig {
                 }
             }
         };
+    }
+    @Bean
+    public ItemClientFallback itemClientFallback() {
+        return new ItemClientFallback();
+    }
+    @Bean
+    public CartClientFallback cartClientFallback() {
+        return new CartClientFallback();
     }
 }
