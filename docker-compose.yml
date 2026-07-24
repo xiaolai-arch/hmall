@@ -99,7 +99,7 @@ services:
     networks:
       - hmall-net
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7091/health"]
+      test: ["CMD", "nc", "-z", "localhost", "7091"]
       interval: 15s
       timeout: 5s
       retries: 10
