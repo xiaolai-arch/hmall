@@ -88,10 +88,10 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
-        <!--Seata分布式事务-->
+        <!--消息发送-->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
     </dependencies>

@@ -1,6 +1,8 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <!-- 阿里云镜像在 Docker 构建中 SSL 不稳定，暂时使用 Maven Central -->
+  <!--
   <mirrors>
     <mirror>
       <id>aliyun</id>
@@ -9,4 +11,5 @@
       <url>https://maven.aliyun.com/repository/public</url>
     </mirror>
   </mirrors>
+  -->
 </settings>

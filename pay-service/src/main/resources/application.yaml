@@ -20,3 +20,10 @@ hm:
 feign:
   okhttp:
     enabled: true # 开启okhttp的feign底层请求调用客户端okhttp
+spring:
+  rabbitmq:
+    host: ${hm.mq.host:localhost} # 主机地址，Docker中通过环境变量覆盖
+    port: 5672 # 端口
+    virtual-host: / # 虚拟主机
+    username: itheima # 用户名
+    password: 123321 # 密码

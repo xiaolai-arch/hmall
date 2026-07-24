@@ -42,6 +42,69 @@ services:
       timeout: 5s
       retries: 5
 
+  # ========== RabbitMQ 消息队列 ==========
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    container_name: hmall-mq
+    restart: always
+    hostname: mq
+    environment:
+      RABBITMQ_DEFAULT_USER: itheima
+      RABBITMQ_DEFAULT_PASS: "123321"
+    ports:
+      - "15672:15672"   # 管理控制台
+      - "5672:5672"     # AMQP
+    volumes:
+      - mq-plugins:/plugins
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  # ========== Seata 分布式事务 ==========
+  seata-server:
+    image: seataio/seata-server:1.5.2
+    container_name: hmall-seata
+    restart: always
+    ports:
+      - "8091:8091"
+      - "7091:7091"
+    environment:
+      # 注册中心：Nacos
+      SEATA_REGISTRY_TYPE: nacos
+      SEATA_REGISTRY_NACOS_SERVER_ADDR: nacos:8848
+      SEATA_REGISTRY_NACOS_APPLICATION: seata-server
+      SEATA_REGISTRY_NACOS_GROUP: DEFAULT_GROUP
+      # 配置中心：使用本地 file 配置
+      # 存储模式：数据库
+      SEATA_STORE_MODE: db
+      SEATA_STORE_DB_DATASOURCE: druid
+      SEATA_STORE_DB_DB_TYPE: mysql
+      SEATA_STORE_DB_DRIVER_CLASS_NAME: com.mysql.cj.jdbc.Driver
+      SEATA_STORE_DB_URL: jdbc:mysql://mysql:3306/seata?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      SEATA_STORE_DB_USER: root
+      SEATA_STORE_DB_PASSWORD: "123"
+      SEATA_STORE_DB_MIN_CONN: 5
+      SEATA_STORE_DB_MAX_CONN: 30
+      TZ: Asia/Shanghai
+    depends_on:
+      mysql:
+        condition: service_healthy
+      nacos:
+        condition: service_healthy
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7091/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
   # ========== Nacos 注册中心 & 配置中心 ==========
   nacos:
     image: nacos/nacos-server:v2.2.3
@@ -53,10 +116,12 @@ services:
     environment:
       MODE: standalone
       NACOS_AUTH_ENABLE: "false"
+      NACOS_APPLICATION_PORT: "9848"
       TZ: Asia/Shanghai
       JAVA_OPT: "-XX:-UseContainerSupport"
     volumes:
       - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
+      - hmall-nacos-data:/home/nacos/data
     networks:
       - hmall-net
     healthcheck:
@@ -64,6 +129,7 @@ services:
       interval: 15s
       timeout: 5s
       retries: 10
+      start_period: 60s
 
   # ========== Spring Cloud Gateway 网关 ==========
   hm-gateway:
@@ -259,6 +325,8 @@ services:
 volumes:
   hmall-mysql-data:
   hmall-redis-data:
+  hmall-nacos-data:
+  mq-plugins:
 
 # ========== 网络 ==========
 networks:

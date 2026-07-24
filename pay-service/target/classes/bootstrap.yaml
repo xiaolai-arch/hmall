@@ -8,6 +8,8 @@ spring:
   cloud:
     nacos:
       server-addr: localhost:8848
+      username: ""
+      password: ""
       config: #共享配置信息
         file-extension: yaml # 配置扩展名
         shared-configs:
