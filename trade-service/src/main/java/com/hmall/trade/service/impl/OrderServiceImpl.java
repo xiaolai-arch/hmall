@@ -1,8 +1,12 @@
 package com.hmall.trade.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.api.dto.CartClearMessage;
+import com.hmall.api.dto.MutilDelayMessage;
 import com.hmall.api.dto.OrderDetailDTO;
+import com.hmall.common.constants.MqConstants;
 import com.hmall.common.exception.BadRequestException;
+import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
 import com.hmall.api.dto.ItemDTO;
 import com.hmall.trade.domain.dto.OrderFormDTO;
@@ -15,6 +19,10 @@ import com.hmall.trade.service.IOrderDetailService;
 import com.hmall.trade.service.IOrderService;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -39,6 +47,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private final ItemClient itemClient;
     private final IOrderDetailService detailService;
     private final CartClient cartClient;
+    private final RabbitTemplate rabbitTemplate;
 
     @Override
     @GlobalTransactional
@@ -73,8 +82,11 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         List<OrderDetail> details = buildDetails(order.getId(), items, itemNumMap);
         detailService.saveBatch(details);
 
+        // TODO改造成异步
         // 3.清理购物车商品
-        cartClient.deleteCartItemByIds(itemIds);
+        CartClearMessage cartClearMessage = new CartClearMessage(UserContext.getUser(), itemIds);
+        rabbitTemplate.convertAndSend("trade.topic", "order.create", cartClearMessage);
+        // cartClient.deleteCartItemByIds(itemIds);
 
         // 4.扣减库存
         try {
@@ -83,6 +95,17 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
             throw new RuntimeException("库存不足！");
         }
         // int i = 1 / 0;
+        // TODO发送延迟消息
+        MutilDelayMessage message = new MutilDelayMessage();
+        message.setData(order.getId());
+        message.setTimes(CollUtils.newArrayList(10000L, 10000L, 10000L));
+        rabbitTemplate.convertAndSend(MqConstants.DELAY_EXCHANGE, MqConstants.DELAY_ORDER_ROUTING_KEY, message, new MessagePostProcessor() {
+            @Override
+            public Message postProcessMessage(Message message) throws AmqpException {
+                message.getMessageProperties().setDelay(1000);
+                return message;
+            }
+        });
         return order.getId();
     }
 

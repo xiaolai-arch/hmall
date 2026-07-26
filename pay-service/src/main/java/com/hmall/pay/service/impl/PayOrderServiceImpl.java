@@ -3,6 +3,7 @@ package com.hmall.pay.service.impl;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.api.dto.PayOrderDTO;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.UserContext;
@@ -68,6 +69,18 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
         // 5.修改订单状态
 //        orderClient.markOrderPaySuccess(po.getBizOrderNo());
         rabbitTemplate.convertAndSend("pay.topic", "pay.status", po.getBizOrderNo());
+    }
+
+    @Override
+    public PayOrderDTO getPayOrderByBizOrderNo(Long bizOrderNo) {
+        // select * from pay_order where biz_order_no = ?
+        PayOrder order = lambdaQuery()
+                .eq(PayOrder::getBizOrderNo, bizOrderNo)
+                .one();
+        if (order == null){
+            return null;
+        }
+        return BeanUtils.toBean(order, PayOrderDTO.class);
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

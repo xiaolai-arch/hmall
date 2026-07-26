@@ -118,7 +118,8 @@ services:
       NACOS_AUTH_ENABLE: "false"
       NACOS_APPLICATION_PORT: "9848"
       TZ: Asia/Shanghai
-      JAVA_OPT: "-XX:-UseContainerSupport"
+      JAVA_OPT: "-XX:+UseContainerSupport -XX:MaxRAMPercentage=50.0 -XX:InitialRAMPercentage=30.0"
+    mem_limit: 2g
     volumes:
       - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
       - hmall-nacos-data:/home/nacos/data
