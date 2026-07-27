@@ -24,23 +24,132 @@ services:
       timeout: 5s
       retries: 10
 
-  # ========== Redis 缓存 ==========
-  redis:
+  # ========== Redis Sentinel 模式 ==========
+  # Master
+  redis-master:
     image: redis:7-alpine
-    container_name: hmall-redis
+    container_name: redis-master
     restart: always
-    command: redis-server --appendonly yes
+    command: redis-server --port 7001 --appendonly yes --daemonize no
     ports:
-      - "6380:6379"
+      - "7001:7001"
     volumes:
-      - hmall-redis-data:/data
+      - redis-master-data:/data
     networks:
       - hmall-net
     healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
+      test: ["CMD", "redis-cli", "-p", "7001", "ping"]
       interval: 10s
       timeout: 5s
       retries: 5
+
+  # Slave 1
+  redis-slave-1:
+    image: redis:7-alpine
+    container_name: redis-slave-1
+    restart: always
+    command: redis-server --port 7002 --replicaof redis-master 7001 --appendonly yes --daemonize no
+    depends_on:
+      redis-master:
+        condition: service_healthy
+    ports:
+      - "7002:7002"
+    volumes:
+      - redis-slave-1-data:/data
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "-p", "7002", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Slave 2
+  redis-slave-2:
+    image: redis:7-alpine
+    container_name: redis-slave-2
+    restart: always
+    command: redis-server --port 7003 --replicaof redis-master 7001 --appendonly yes --daemonize no
+    depends_on:
+      redis-master:
+        condition: service_healthy
+    ports:
+      - "7003:7003"
+    volumes:
+      - redis-slave-2-data:/data
+    networks:
+      - hmall-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "-p", "7003", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Sentinel 1
+  sentinel-1:
+    image: redis:7-alpine
+    container_name: sentinel-1
+    restart: always
+    command: >
+      sh -c "
+      until IP=$$(getent hosts redis-master | awk '{print $$1}'); do sleep 1; done;
+      echo \"sentinel monitor mymaster $$IP 7001 2\" > /tmp/sentinel.conf;
+      echo \"sentinel down-after-milliseconds mymaster 5000\" >> /tmp/sentinel.conf;
+      echo \"sentinel failover-timeout mymaster 10000\" >> /tmp/sentinel.conf;
+      echo \"sentinel parallel-syncs mymaster 1\" >> /tmp/sentinel.conf;
+      exec redis-sentinel /tmp/sentinel.conf --port 26379 --daemonize no
+      "
+    ports:
+      - "26379:26379"
+    networks:
+      - hmall-net
+    depends_on:
+      redis-master:
+        condition: service_healthy
+
+  # Sentinel 2
+  sentinel-2:
+    image: redis:7-alpine
+    container_name: sentinel-2
+    restart: always
+    command: >
+      sh -c "
+      until IP=$$(getent hosts redis-master | awk '{print $$1}'); do sleep 1; done;
+      echo \"sentinel monitor mymaster $$IP 7001 2\" > /tmp/sentinel.conf;
+      echo \"sentinel down-after-milliseconds mymaster 5000\" >> /tmp/sentinel.conf;
+      echo \"sentinel failover-timeout mymaster 10000\" >> /tmp/sentinel.conf;
+      echo \"sentinel parallel-syncs mymaster 1\" >> /tmp/sentinel.conf;
+      exec redis-sentinel /tmp/sentinel.conf --port 26380 --daemonize no
+      "
+    ports:
+      - "26380:26380"
+    networks:
+      - hmall-net
+    depends_on:
+      redis-master:
+        condition: service_healthy
+
+  # Sentinel 3
+  sentinel-3:
+    image: redis:7-alpine
+    container_name: sentinel-3
+    restart: always
+    command: >
+      sh -c "
+      until IP=$$(getent hosts redis-master | awk '{print $$1}'); do sleep 1; done;
+      echo \"sentinel monitor mymaster $$IP 7001 2\" > /tmp/sentinel.conf;
+      echo \"sentinel down-after-milliseconds mymaster 5000\" >> /tmp/sentinel.conf;
+      echo \"sentinel failover-timeout mymaster 10000\" >> /tmp/sentinel.conf;
+      echo \"sentinel parallel-syncs mymaster 1\" >> /tmp/sentinel.conf;
+      exec redis-sentinel /tmp/sentinel.conf --port 26381 --daemonize no
+      "
+    ports:
+      - "26381:26381"
+    networks:
+      - hmall-net
+    depends_on:
+      redis-master:
+        condition: service_healthy
 
   # ========== RabbitMQ 消息队列 ==========
   rabbitmq:
@@ -171,7 +280,7 @@ services:
       HM_DB_PORT: "3306"
       HM_DB_PW: "123"
       SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
-      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_HOST: redis-master
       TZ: Asia/Shanghai
     networks:
       - hmall-net
@@ -196,7 +305,7 @@ services:
       HM_DB_PORT: "3306"
       HM_DB_PW: "123"
       SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
-      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_HOST: redis-master
       TZ: Asia/Shanghai
     networks:
       - hmall-net
@@ -221,7 +330,7 @@ services:
       HM_DB_PORT: "3306"
       HM_DB_PW: "123"
       SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
-      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_HOST: redis-master
       TZ: Asia/Shanghai
     networks:
       - hmall-net
@@ -246,7 +355,7 @@ services:
       HM_DB_PORT: "3306"
       HM_DB_PW: "123"
       SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
-      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_HOST: redis-master
       TZ: Asia/Shanghai
     networks:
       - hmall-net
@@ -271,7 +380,7 @@ services:
       HM_DB_PORT: "3306"
       HM_DB_PW: "123"
       SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
-      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_HOST: redis-master
       TZ: Asia/Shanghai
     networks:
       - hmall-net
@@ -287,7 +396,7 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
-      redis:
+      redis-master:
         condition: service_healthy
       nacos:
         condition: service_healthy
@@ -297,7 +406,7 @@ services:
       HM_DB_HOST: mysql
       HM_DB_PW: "123"
       SPRING_CLOUD_NACOS_SERVER_ADDR: nacos:8848
-      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_HOST: redis-master
       TZ: Asia/Shanghai
     networks:
       - hmall-net
@@ -325,7 +434,9 @@ services:
 # ========== 数据卷 ==========
 volumes:
   hmall-mysql-data:
-  hmall-redis-data:
+  redis-master-data:
+  redis-slave-1-data:
+  redis-slave-2-data:
   hmall-nacos-data:
   mq-plugins:
 

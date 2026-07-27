@@ -1,8 +1,6 @@
-server:
-  port: 8085
 spring:
   application:
-    name: trade-service
+    name: search-service
   profiles:
     active: dev
   cloud:
@@ -14,4 +12,4 @@ spring:
           - data-id: shared-jdbc.yaml
           - data-id: shared-log.yaml
           - data-id: shared-swagger.yaml
-          - dataId: shared-seata.yaml
+          - data-id: shared-mq.yaml

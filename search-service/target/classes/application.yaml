@@ -1,0 +1,6 @@
+hm:
+  db:
+    database: hm-item
+  swagger:
+    title: 商品搜索接口文档
+    package: com.hmall.search.controller

@@ -30,6 +30,12 @@ public class ItemClientFallback implements FallbackFactory<ItemClient> {
                 log.error("扣减库存，走了降级");
                 throw new RuntimeException("库存服务异常");
             }
+
+            @Override
+            public ItemDTO queryItemById(Long id) {
+                log.error("查询商品，走了降级");
+                throw new RuntimeException("库存服务异常");
+            }
         };
 
     }
