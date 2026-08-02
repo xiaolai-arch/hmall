@@ -6,6 +6,7 @@ import com.hmall.api.dto.MutilDelayMessage;
 import com.hmall.api.dto.PayOrderDTO;
 import com.hmall.api.po.Order;
 import com.hmall.common.constants.MqConstants;
+import com.hmall.pay.service.IPayOrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.AmqpException;
@@ -27,6 +28,7 @@ public class PayStatusListener {
     private final OrderClient orderClient;
     private final PayClient payClient;
     private final RabbitTemplate rabbitTemplate;
+    private final IPayOrderService payOrderService;
 
     /**
      * durable = "true" 持久化队列
@@ -72,11 +74,9 @@ public class PayStatusListener {
             log.info("支付成功，订单id: {}", msg);
             orderClient.markOrderPaySuccess(msg.getData());
         } else if (payOrderDTO.getStatus() == 2) {
-            // 已取消
+            // 支付单已取消，同步关闭订单
             log.error("支付订单已经被取消，订单id: {}", msg.getData());
-            // TODO: 订单和支付单都取消
-
-
+            orderClient.markOrderClose(msg.getData());
         } else {
             // 目前还没支付，判断是否还有延迟时间
             if (msg.hasNext()) {
@@ -92,9 +92,12 @@ public class PayStatusListener {
                     }
                 });
             }else {
-                // 没时间了
+                // 没时间了，订单和支付单都取消
                 log.info("没时间了，所以订单和支付单都取消{}", msg);
-                // TODO: 订单和支付单都取消
+                boolean closed = payOrderService.markPayOrderClosed(msg.getData());
+                if (closed) {
+                    orderClient.markOrderClose(msg.getData());
+                }
             }
         }
     }

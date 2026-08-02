@@ -18,4 +18,8 @@ public interface OrderClient {
     @PutMapping("/orders/{orderId}")
     void markOrderPaySuccess(@PathVariable("orderId") Long orderId);
 
+    // 修改订单状态为已关闭
+    @PutMapping("/orders/{orderId}/close")
+    void markOrderClose(@PathVariable("orderId") Long orderId);
+
 }

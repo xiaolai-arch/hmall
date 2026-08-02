@@ -83,6 +83,15 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
         return BeanUtils.toBean(order, PayOrderDTO.class);
     }
 
+    @Override
+    public boolean markPayOrderClosed(Long bizOrderNo) {
+        return lambdaUpdate()
+                .set(PayOrder::getStatus, PayStatus.TRADE_CLOSED.getValue())
+                .eq(PayOrder::getBizOrderNo, bizOrderNo)
+                .in(PayOrder::getStatus, PayStatus.NOT_COMMIT.getValue(), PayStatus.WAIT_BUYER_PAY.getValue())
+                .update();
+    }
+
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {
         return lambdaUpdate()
                 .set(PayOrder::getStatus, PayStatus.TRADE_SUCCESS.getValue())

@@ -36,4 +36,11 @@ public class OrderController {
     public void markOrderPaySuccess(@PathVariable("orderId") Long orderId) {
         orderService.markOrderPaySuccess(orderId);
     }
+
+    @ApiOperation("标记订单已关闭")
+    @ApiImplicitParam(name = "orderId", value = "订单id", paramType = "path")
+    @PutMapping("/{orderId}/close")
+    public void markOrderClose(@PathVariable("orderId") Long orderId) {
+        orderService.markOrderClose(orderId);
+    }
 }

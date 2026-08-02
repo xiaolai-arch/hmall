@@ -21,4 +21,6 @@ public interface IPayOrderService extends IService<PayOrder> {
     void tryPayOrderByBalance(PayOrderFormDTO payOrderFormDTO);
 
     PayOrderDTO getPayOrderByBizOrderNo(Long bizOrderNo);
+
+    boolean markPayOrderClosed(Long bizOrderNo);
 }
